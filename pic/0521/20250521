@@ -1,0 +1,74 @@
+"C:\Windows\System32\drivers\etc\hosts"找到要改的資料傳送到網頁
+192.168.67.75  vm-win11
+192.168.67.75  shopping.test
+192.168.67.75  introduct.test
+192.168.67.75  game.test
+192.168.67.75  aiot114a.test
+192.168.67.75  phpmyadmin.test
+(網站測試就知道有沒有了，記得重開)
+
+
+絕對/相對路徑 
+絕對路徑：從根目錄開始的路徑(有一個base基準點在c:\)
+相對路徑：從目前所在的目錄開始的路徑(參考現在的所在位置)
+
+樹的結構
+c:\  (root)
+
+
+.ssh/authorized_keys
+
+FTP密碼設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "aiot114a",
+    "password": "123",
+    "remotePath": "/", 
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+
+}
+
+SFTP-SSH有密碼的設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "aiot114a",
+    "password": "123",
+    "remotePath": "C:/xampp/htdocs/aiot114a.test", 
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+
+}
+
+SSH免密碼的設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "User",
+    "privateKeyPath": "C:/Users/職前/.ssh/id_rsa",
+    "remotePath": "C:/xampp/htdocs/aiot114a.test",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+}
+
+
+IdentityFile c:\Users\職前(醁a瑕^i^m)\.ssh\id_rsa
+IdentitiesOnly yes
+Port 22
+User user
+ForwardX11 yes
+

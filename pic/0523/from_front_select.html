@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>form radio</title>
+</head>
+
+<body>
+  <form action="" method="get">
+    <h1>歡迎進入民調系統</h1>
+    <p>請留個人資料</p>
+    <p>姓名:<input type="text" name="user" autofocus></p>
+    <!-- 建立年性別分析資料 -->
+    <p>性別:<br>
+      <input type="radio" name="sex" value="1">男性<br>
+      <input type="radio" name="sex" value="0">女性
+    </p>
+    <!-- 建立年齡層分析資料 -->
+    <p>年齡分析資料:<br>
+      <select name="age">
+        <option value="20" selected>小於20歲</option>
+        <option value="40">20-40歲</option>
+        <option value="60">41-60歲</option>
+        <option value="70">大於60歲</option>
+      </select>
+      <hr>
+      <input type="radio" name="age" value="20" checked>小於20歲<br>
+      <input type="radio" name="age" value="40">20-40歲<br>
+      <input type="radio" name="age" value="60">41-60歲<br>
+      <input type="radio" name="age" value="70">大於60歲<br>
+    </p>
+  </form>
+</body>
+
+</html>

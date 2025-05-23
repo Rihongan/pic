@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單</title>
+  </head>
+
+  <body>
+    
+    <form action=" " method="get">
+      <h1>歡迎光臨!職訓局就業調查系統</h1>
+
+      <p>請留下您的個人資料</p>
+
+      <p>
+        <label for="name">
+        姓名:<input type="text" name="user" autofocus id="name"></p>
+        </label>
+
+        <label for="addr">
+      <p>地址:<input type="text" name="addr" autofocus id="addr" ></p>
+        </label>
+
+      <p>電話:<input type="tel" name="phone" placeholder="09xx-xxx-xxx" ></p>
+      <p>郵件:<input type="email" name="mail" placeholder="xxxxx@xxxxx.com" ></p>
+      <p>個人網址</p>
+      <p>URL網址:<input type="url" name="myurl" value="http://" ></p>
+      <p>性別:<br>
+        <input type="radio" name="sex" value="男" checked>男<br>
+        <input type="radio" name="sex" value="女" >女
+      </p>
+      <p>年齡調查:<br>
+        <input type="radio" name="age" value="20" >小於20歲<br>
+        <input type="radio" name="age" value="40" checked>20~40歲<br>
+        <input type="radio" name="age" value="50" >41~50歲<br>
+        <input type="radio" name="age" value="60" >51~60歲<br>
+        <input type="radio" name="age" value="70" >大於60歲<br>
+
+      <p>意見調查:<br>
+        <textarea name="suggest" rows="5" cols="40" placeholder="請留下您的特殊需求"></textarea>
+      </p>
+      </p>
+
+    </form>
+
+
+  </body>
+</html>

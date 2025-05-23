@@ -1,0 +1,203 @@
+PS C:\github\atzs19960904@gmail.com> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    pic/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+        "markdown \346\226\207\344\273\266\350\252\252\346\230\216 .md"
+        "markdown\344\273\213\347\264\271.md"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\github\atzs19960904@gmail.com> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\github\atzs19960904@gmail.com> git add "markdown \346\226\207\344\273\266\350\252\252\346\230\216 .md"
+fatal: pathspec 'markdown \346\226\207\344\273\266\350\252\252\346\230\216 .md' did not match any files
+PS C:\github\atzs19960904@gmail.com> git add *
+warning: in the working copy of '.vscode/settings.json', LF will be replaced by CRLF the next time Git touches it
+PS C:\github\atzs19960904@gmail.com> git commit -m aaa
+[main af58e95] aaa
+ 4 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 .vscode/settings.json
+ create mode 100644 "markdown \346\226\207\344\273\266\350\252\252\346\230\216 .md"
+ create mode 100644 "markdown\344\273\213\347\264\271.md"
+ delete mode 100644 pic/README.md
+PS C:\github\atzs19960904@gmail.com> git push
+To https://github.com/Rihongan/pic.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Rihongan/pic.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\github\atzs19960904@gmail.com> gitr remote -v
+徑是否正確，然後再試一次。
+位於 線路:1 字元:1
++ gitr remote -v
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (gitr:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\github\atzs19960904@gmail.com> git remote -v
+origin  https://github.com/Rihongan/pic.git (fetch)
+origin  https://github.com/Rihongan/pic.git (push)
+PS C:\github\atzs19960904@gmail.com> git fetch
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 83.32 KiB | 1.04 MiB/s, done.
+From https://github.com/Rihongan/pic
+   714bad5..bc78abc  main       -> origin/main
+PS C:\github\atzs19960904@gmail.com> git log
+commit af58e952092e32e8e3fe3eed7462d02443b465cc (HEAD -> main)
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Fri May 16 13:31:39 2025 +0800
+
+    aaa
+
+commit 714bad52ca1a8fb2e730db4c8c9a0e662519481e
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Thu May 15 11:43:34 2025 +0800
+
+    第一次確認
+
+commit aa2bdae4af6f8bf6fff91d462c2c8c10ce6597df
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Thu May 15 11:37:32 2025 +0800
+
+    第一次確認
+PS C:\github\atzs19960904@gmail.com> git rebase main
+Current branch main is up to date.
+PS C:\github\atzs19960904@gmail.com> git log
+commit af58e952092e32e8e3fe3eed7462d02443b465cc (HEAD -> main)
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Fri May 16 13:31:39 2025 +0800
+
+    aaa
+
+commit 714bad52ca1a8fb2e730db4c8c9a0e662519481e
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Thu May 15 11:43:34 2025 +0800
+
+    第一次確認
+
+commit aa2bdae4af6f8bf6fff91d462c2c8c10ce6597df
+Author: Rihongan <atzs19960904@gmail.com>
+Date:   Thu May 15 11:37:32 2025 +0800
+
+    第一次確認
+PS C:\github\atzs19960904@gmail.com>
+
+
+
+
+
+
+
+                                     gy
+gy : 無法辨識 'gy' 詞彙是否為 Cmdlet、函數、指令檔或可執行程式的名稱。請檢查名稱拼字是否正確，如果包含路徑的話，請確認路徑是否正確，然後再試一次。
+位於 線路:1 字元:1
++ gy
++ ~~
+    + CategoryInfo          : ObjectNotFound: (gy:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\github\atzs19960904@gmail.com>
+PS C:\github\atzs19960904@gmail.com>
+PS C:\github\atzs19960904@gmail.com> giT LOG --GRAPH
+git: 'LOG' is not a git command. See 'git --help'.
+PS C:\github\atzs19960904@gmail.com> git log --graph
+* commit af58e952092e32e8e3fe3eed7462d02443b465cc (HEAD -> main)
+| Author: Rihongan <atzs19960904@gmail.com>
+| Date:   Fri May 16 13:31:39 2025 +0800
+|
+|     aaa
+|
+* commit 714bad52ca1a8fb2e730db4c8c9a0e662519481e
+| Author: Rihongan <atzs19960904@gmail.com>
+| Date:   Thu May 15 11:43:34 2025 +0800
+|
+|     第一次確認
+|
+* commit aa2bdae4af6f8bf6fff91d462c2c8c10ce6597df
+  Author: Rihongan <atzs19960904@gmail.com>
+  Date:   Thu May 15 11:37:32 2025 +0800
+
+      第一次確認
+PS C:\github\atzs19960904@gmail.com> git remote -v
+origin  https://github.com/Rihongan/pic.git (fetch)
+origin  https://github.com/Rihongan/pic.git (push)
+PS C:\github\atzs19960904@gmail.com> git pull
+Merge made by the 'ort' strategy.
+ pic/1.png              | Bin 0 -> 27693 bytes
+ pic/20250515132530.png | Bin 0 -> 20056 bytes
+ pic/20250515143240.png | Bin 0 -> 41029 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pic/1.png
+ create mode 100644 pic/20250515132530.png
+ create mode 100644 pic/20250515143240.png
+PS C:\github\atzs19960904@gmail.com> git rebase main
+Current branch main is up to date.
+PS C:\github\atzs19960904@gmail.com> git log --graph
+*   commit 6f2e2bc5665bd8595ea3b3d82e75abfeab6dded9 (HEAD -> main)
+|\  Merge: af58e95 bc78abc
+| | Author: Rihongan <atzs19960904@gmail.com>
+| | Date:   Fri May 16 13:36:02 2025 +0800
+| |
+| |     Merge branch 'main' of https://github.com/Rihongan/pic
+| |
+| * commit bc78abc9606710eb0737d6de68b7103c76aa7007 (origin/main, origin/HEAD)
+| | Author: Rihongan <atzs19960904@gmail.com>
+| | Date:   Thu May 15 14:32:41 2025 +0800
+| |
+| |     Upload by PicGo
+| |
+| * commit edeeb2ba081fb9b692ae34f91f9f459006fa74c7
+| | Author: Rihongan <atzs19960904@gmail.com>
+| | Date:   Thu May 15 13:25:31 2025 +0800
+| |
+| |     Upload by PicGo
+| |
+| * commit 68a1ca0aa3a52d89c8a9064beadb93347acdb3ef
+| | Author: Rihongan <atzs19960904@gmail.com>
+| | Date:   Thu May 15 12:53:50 2025 +0800
+| |
+| |     Upload by PicGo
+| |
+* | commit af58e952092e32e8e3fe3eed7462d02443b465cc
+|/  Author: Rihongan <atzs19960904@gmail.com>
+|   Date:   Fri May 16 13:31:39 2025 +0800
+|
+|       aaa
+|
+* commit 714bad52ca1a8fb2e730db4c8c9a0e662519481e
+| Author: Rihongan <atzs19960904@gmail.com>
+| Date:   Thu May 15 11:43:34 2025 +0800
+|
+|     第一次確認
+|
+* commit aa2bdae4af6f8bf6fff91d462c2c8c10ce6597df
+  Author: Rihongan <atzs19960904@gmail.com>
+  Date:   Thu May 15 11:37:32 2025 +0800
+
+      第一次確認
+PS C:\github\atzs19960904@gmail.com> git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 932 bytes | 932.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Rihongan/pic.git
+   bc78abc..6f2e2bc  main -> main
+PS C:\github\atzs19960904@gmail.com> 

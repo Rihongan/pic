@@ -1,0 +1,65 @@
+"C:\Windows\System32\drivers\etc\hosts"找到要改的資料傳送到網頁
+192.168.67.75  vm-win11
+192.168.67.75  shopping.test
+192.168.67.75  introduce.test
+192.168.67.75  game.test
+192.168.67.75  aiot114a.test
+192.168.67.75  phpmyadmin.test
+
+.ssh/authorized_keys
+
+FTP密碼設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "aiot114a",
+    "password": "123",
+    "remotePath": "/",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+}
+C:\Users\職前\Desktop\截圖區\2025-05-22 11_29_38-sftp.json - atzs19960904@gmail.com - 406教室 - Visual Studio Code.png
+SFTP-SSH有密碼的設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "職前",
+    "password": "406",
+    "remotePath": "/xampp/htdocs/aiot114a.test", 
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+
+}
+
+SSH免密碼的設定
+
+{
+    "name": "aiot114a-vm",
+    "host": "aiot114a.test",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "職前",
+    "privateKeyPath": "C:/Users/職前/.ssh/id_rsa",
+    "remotePath": "/xampp/htdocs/aiot114a.test",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "openSsh": false
+}
+
+#vm-aiot114a
+Host aiot114a
+HostName aiot114a.test
+IdentityFile c:\Users\職前(醁a瑕^i^m)\.ssh\id_rsa
+IdentitiesOnly yes
+Port 22
+User user
+ForwardX11 yes
+
